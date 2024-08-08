@@ -13,6 +13,10 @@ public class Venda {
         paes.add(item);
     }
 
+    public void adicionarItem(int codigo, ArrayList<Itens> itens){
+        paes.add(itens.get(codigo));
+    }
+
     public void removerItem(int codigo){
         String itemRemovido = "";
         for(int i=0; i<paes.size(); i++){
