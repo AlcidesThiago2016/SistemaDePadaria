@@ -14,7 +14,8 @@ public class Venda {
     }
 
     public void adicionarItem(int codigo, ArrayList<Itens> itens){
-        paes.add(itens.get(codigo));
+        System.out.println(itens.get(codigo-1).getNome()+", foi adicionado com sucesso.");
+        paes.add(itens.get(codigo-1));
     }
 
     public void removerItem(int codigo){
